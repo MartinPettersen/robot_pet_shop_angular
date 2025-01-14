@@ -16,3 +16,12 @@ export type RobotPet = {
     Aldersanbefaling: number,
     Spesifikasjoner: string,
 }
+
+export interface ProductCategory {
+    Mammalian: RobotPet[];
+    Avian: RobotPet[];
+    'Arachnid & Other Invertebrates': RobotPet[];
+    Primates: RobotPet[];
+    Dinosaurs: RobotPet[];
+    'Robotic Wonders': RobotPet[];
+}

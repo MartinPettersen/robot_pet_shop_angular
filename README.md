@@ -15,3 +15,12 @@ Brukte så Imagen 3 til å generere bildene.
 
 Brukte så deretter 
 ChatGPT til å generere informasjon om produktene.
+
+
+# Del 2
+
+Da jeg foreløbig ikke vet om noen måte å hoste backenden på en rimelig måte så har jeg valgt å ta å plassere produkt dataene i en json intill videre.
+
+# Del 3
+
+Produkt siden skal gi informasjon om produktet til kunden samt la kunden velge antall de ønsker  å legge til i handlekurven.
