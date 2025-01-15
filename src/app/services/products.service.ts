@@ -11,6 +11,6 @@ export class ProductsService {
   constructor(private http: HttpClient) { }
 
  getProducts$(): Observable<ProductCategory>{
-    return this.http.get<ProductCategory>('database.json');
+    return this.http.get<ProductCategory>('assets/database.json');
  }
 }

@@ -18,6 +18,7 @@ export type RobotPet = {
 }
 
 export interface ProductCategory {
+    [key: string]: any;
     Mammalian: RobotPet[];
     Avian: RobotPet[];
     'Arachnid & Other Invertebrates': RobotPet[];
