@@ -1,17 +1,15 @@
-<div class="w-screen flex items-center justify-center flex-col">
-
-
+<article class="w-screen flex items-center justify-center flex-col">
     <p>{{category}}/{{productID}}</p>
 
     <ng-container  *ngIf="robot; else noRobot">
-        <div class="pt-20 flex items-center justify-center flex-col md:flex-row gap-8 w-full">
+        <section class="pt-20 flex items-center justify-center flex-col md:flex-row gap-8 w-full">
 
             <div class="md:w-[40%] flex items-end justify-end">
 
-                <img class="w-[200px] h-[200px] md:w-[400px] md:h-[400px] max-w-full overflow-hidden" src="assets/images/{{robot?.bilde}}" alt="Bilde av Robot Pet">
+                <img class="w-[200px] h-[200px] md:w-[600px] md:h-[600px] max-w-full overflow-hidden" src="assets/images/{{robot?.bilde}}" alt="Bilde av Robot Pet">
             </div>
             <div class="w-[90%] md:w-[40%]">
-                <h1 class="font-bold">{{robot.tittel}}</h1>
+                <h1 class="font-bold py-1">{{robot.tittel}}</h1>
                 <p><strong>Beskrivelse</strong>: {{robot.beskrivelse}}</p>
                 <p><strong>Generelt</strong>: {{robot.General}}</p>
                 <p><strong>Pris</strong>: {{robot.pris}} kr</p>
@@ -25,11 +23,22 @@
                 <p><strong>Batteri</strong>: {{robot.Batteri}}</p>
                 <p><strong>Lading</strong>: {{robot.Lading}} timer</p>
                 <p><strong>Garanti</strong>: {{robot.Garanti}}</p>
+                <div class="flex items center justify-center flex-col">
+                    <div class="flex items-center justify-center gap-2 ">
+                        <button aria-label="Fjern et produkt" class="font-bold text-2xl">-</button>
+                        <p class="text-2xl">0</p>
+                        <button aria-label="Legg til et produkt" class="font-bold text-2xl">+</button>
+                    </div>
+                    <div class="flex items-center justify-center">
+
+                        <button aria-label="Legg til handlekurven" class="md:w-[36%] flex items-center justify-center border border-[#22E6F3] p-4">Legg til handlekurven</button>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
     </ng-container>
 
-</div>
+</article>
 
 <ng-template #noRobot>
     <p>Feil Oppstod</p>

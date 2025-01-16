@@ -1,10 +1,30 @@
-<header class="min-w-screen flex flex-col md:flex-row justify-center md:justify-between  p-10">
-    <h1 class="font-extrabold text-2xl md:text-4xl flex items-center justify-center">Cute Evil Robot Pets</h1>
-    <div class="flex flex-col md:flex-row space-x-2 justify-center items-center md:items-end">
-        <a routerLink="/">Hjem</a>
-        <a routerLink="/">Om</a>
-        <a routerLink="/">Kontakt</a>
-        <a routerLink="/robots">Roboter</a> 
-        <a routerLink="/">CartIcon</a>
-    </div>
+<header
+    class="min-w-screen "
+>
+    <nav aria-label="Main Navigation" class="flex flex-col md:flex-row justify-center md:justify-between p-10">
+        <h1
+            class="font-extrabold text-2xl md:text-4xl flex items-center justify-center"
+        >
+            Cute Evil Robot Pets
+        </h1>
+        <ul
+            class="flex flex-col md:flex-row space-x-2 justify-center items-center md:items-end"
+        >
+            <li>
+                <a routerLink="/" aria-label="Gå til hjemmesiden">Hjem</a>
+            </li>
+            <li>
+                <a routerLink="/" aria-label="Gå til om oss">Om</a>
+            </li>
+            <li>
+                <a routerLink="/" aria-label="Gå til kontakt oss">Kontakt</a>
+            </li>
+            <li>
+                <a routerLink="/robots" aria-label="Gå til produkt siden">Roboter</a>
+            </li>
+            <li>
+                <a routerLink="/" aria-label="Gå til handlekurven">CartIcon</a>
+            </li>
+        </ul>
+    </nav>
 </header>

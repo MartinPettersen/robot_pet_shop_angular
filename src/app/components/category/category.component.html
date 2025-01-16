@@ -1,9 +1,17 @@
-<div class="w-full md:w-[100%] flex flex-col items-center gap-8 justify-center ">
-
-    <p class="w-[100%] border-b-2 border-[#22E6F3]">{{ categoryLabel }}  ^</p>
-    <div class="flex items-center justify-evenly w-full flex-col md:grid md:grid-cols-3 gap-4">
+<section class="w-full  flex flex-col items-center gap-4 justify-center" aria-label="category">
+    <div class="flex justify-between w-full border-b-2 pb-1 border-[#22E6F3]">
+        <h2 class="w-[100%] ">
+            {{ categoryLabel }}
+        </h2>
+        <button *ngIf="showRobots" (click)="toggleRobots()" aria-label="skjul produkter"
+        >▼</button>
+        <button *ngIf="!showRobots" (click)="toggleRobots()" aria-label="hvis produkter">▲</button>
+    </div>
+    <div *ngIf="showRobots"
+        class="flex items-center justify-evenly w-full flex-col md:grid md:grid-cols-3 gap-4"
+    >
         <div *ngFor="let robot of category" class="flex-none">
             <app-robot [robot]="robot"></app-robot>
         </div>
     </div>
-</div>
+</section>

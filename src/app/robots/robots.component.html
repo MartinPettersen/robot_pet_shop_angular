@@ -1,7 +1,7 @@
-<div class="container mx-auto  flex items-center justify-center ">
+<main class="container mx-auto  flex items-center justify-center ">
 
-    <div class="flex flex-col items-center">
-        <app-category class="w-full" *ngFor="let category of productKeys" [categoryLabel]="category" [category]="productCatalog?.[category]"></app-category>
-    </div>
+    <section class="flex gap-12 flex-col items-center">
+        <app-category class="w-full" *ngFor="let category of productKeys" [categoryLabel]="category" [category]="productCatalog?.[category]" ></app-category>
+    </section>
 
-</div>
+</main>
