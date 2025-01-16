@@ -6,7 +6,7 @@ export type RobotPet = {
     pris: string,
     General: string,
     Kategori: string,
-    Størrelse: string,
+    Storrelse: string,
     Vekt: number,
     Materiale: string,
     Batteri: string,

@@ -1,4 +1,4 @@
-<div class="border-2 flex items-center justify-center flex-col border-[#22E6F3] ">
+<a  [routerLink]="['/robot', robot.Kategori ,robot.tittel]" class="border-2 flex items-center justify-center flex-col border-[#22E6F3] ">
     <img class="w-[200px] h-[200px] md:w-[400px] md:h-[400px] max-w-full overflow-hidden" src="assets/images/{{robot.bilde}}" alt="Bilde av Robot Pet">
     <p>{{ robot.tittel }}</p>
-</div>
+</a>

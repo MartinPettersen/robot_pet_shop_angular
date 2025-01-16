@@ -1,0 +1,36 @@
+<div class="w-screen flex items-center justify-center flex-col">
+
+
+    <p>{{category}}/{{productID}}</p>
+
+    <ng-container  *ngIf="robot; else noRobot">
+        <div class="pt-20 flex items-center justify-center flex-col md:flex-row gap-8 w-full">
+
+            <div class="md:w-[40%] flex items-end justify-end">
+
+                <img class="w-[200px] h-[200px] md:w-[400px] md:h-[400px] max-w-full overflow-hidden" src="assets/images/{{robot?.bilde}}" alt="Bilde av Robot Pet">
+            </div>
+            <div class="w-[90%] md:w-[40%]">
+                <h1 class="font-bold">{{robot.tittel}}</h1>
+                <p><strong>Beskrivelse</strong>: {{robot.beskrivelse}}</p>
+                <p><strong>Generelt</strong>: {{robot.General}}</p>
+                <p><strong>Pris</strong>: {{robot.pris}} kr</p>
+                <p><strong>Anbefalt alder</strong>: {{robot.Aldersanbefaling}}</p>
+                <p><strong>Spesifikasjoner</strong>: {{robot.Spesifikasjoner}}</p>
+                <p><strong>Kategori</strong>: {{robot.Kategori}}</p>
+                <p><strong>Vekt</strong>: {{robot.Vekt}} kg</p>
+                <p><strong>Størrelse</strong>: {{robot.Storrelse}}</p>
+                <p><strong>Materiale</strong>: {{robot.Materiale}}</p>
+                <p><strong>Funksjoner</strong>: {{robot.Funksjoner}}</p>
+                <p><strong>Batteri</strong>: {{robot.Batteri}}</p>
+                <p><strong>Lading</strong>: {{robot.Lading}} timer</p>
+                <p><strong>Garanti</strong>: {{robot.Garanti}}</p>
+            </div>
+        </div>
+    </ng-container>
+
+</div>
+
+<ng-template #noRobot>
+    <p>Feil Oppstod</p>
+  </ng-template>
