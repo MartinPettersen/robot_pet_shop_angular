@@ -24,3 +24,7 @@ Da jeg foreløbig ikke vet om noen måte å hoste backenden på en rimelig måte
 # Del 3
 
 Produkt siden skal gi informasjon om produktet til kunden samt la kunden velge antall de ønsker  å legge til i handlekurven.
+
+# Del 4
+
+Da min løsning på produkt side inneholdt en katalog side så isteder for å gjennskape eller forandre på nåværende design så hovedsiden blir gjort om til hovedsakelig presentere hva butikken handler om.
