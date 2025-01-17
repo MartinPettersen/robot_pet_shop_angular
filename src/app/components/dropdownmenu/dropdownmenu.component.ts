@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { ProductsService } from '../../services/products.service';
 import { ProductCategory } from '../../../types';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-dropdownmenu',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './dropdownmenu.component.html',
   styleUrl: './dropdownmenu.component.css'
 })

@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { RobotsComponent } from './robots/robots.component';
 import { RobotPageComponent } from './robot-page/robot-page.component';
+import { CatelogComponent } from './catelog/catelog.component';
 
 export const routes: Routes = [
 
@@ -16,5 +17,9 @@ export const routes: Routes = [
     {
         path: 'robot/:category/:productID',
         component: RobotPageComponent
+    },
+    {
+        path: 'category/:category',
+        component: CatelogComponent
     }
 ];
