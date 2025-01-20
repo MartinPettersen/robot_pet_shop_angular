@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { RobotService } from '../services/robot.service';
 import { RobotPet } from '../../types';
 import { CommonModule } from '@angular/common';
+import { ShoppingcartService } from '../services/shoppingcart.service';
 
 @Component({
   selector: 'app-robot-page',
@@ -15,7 +16,7 @@ export class RobotPageComponent implements OnInit {
     category: string | null = null;
     robot: RobotPet | null = null;
 
-    constructor(private route: ActivatedRoute, private robotService: RobotService) { }
+    constructor(private route: ActivatedRoute, private robotService: RobotService, private shoppingcartService: ShoppingcartService) { }
 
     ngOnInit(): void {
       this.productID = this.route.snapshot.paramMap.get('productID');
@@ -32,5 +33,9 @@ export class RobotPageComponent implements OnInit {
         })
 
       console.log('Product ID:', this.productID);
+    }
+    addRobot(robot: RobotPet): void {
+        console.log("adding robot to shoppingcart", robot)
+        this.shoppingcartService.addProduct(robot);
     }
   }

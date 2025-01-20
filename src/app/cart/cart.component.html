@@ -1,0 +1,14 @@
+<main class="container mx-auto  flex items-center justify-center ">
+    <p>Din handlekurv</p>
+    <section class="flex gap-12 flex-col items-center">
+        <div *ngFor="let robot of cart">
+            <p>{{robot.tittel}}</p>
+            <div>
+                <div>-</div>
+                <div>1</div>
+                <div>+</div>
+            </div>
+        </div>
+    </section>
+
+</main>
